@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+</head>
+<body>
+ <form  action="https://formspree.io/sova.rostislav@gmail.com"
+      method="POST">
+     <label for="clien-name">Name:</label>
+     <input id="clien-name" name="client-name" type="text" placeholder="you're name" 
+            required>
+     <br>
+     <label>Email: <input type="email" name="client-email" 
+            required></label>
+            <br>
+     <label>Car plate: <input type="text" name="client-car" placeholder="Car plate number"
+            required pattern="[A-Z]{2}[\d]{4}[A-Z]{2}" title="AA1234BB"></label>
+     <br><br>
+     <label for="">Gender: </label>
+     <br>
+     <label></label><input type="radio" name="client-gender" value="male"> Male</label>
+     <br>
+     <br>
+     <label><input type="radio" name="client-gender" value="female"> Female</label>
+     <br>
+     <br>
+     <label><input type="radio" name="client-gender" value="other"> Other</label>
+     <br>
+     <input type="submit">
+     <br><br>
+     <input type="reset">
+ </form>   
+</body>
+</html>
